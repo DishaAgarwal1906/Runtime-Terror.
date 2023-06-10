@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Boxes Example</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+        .drop{
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      left:8rem;
+      margin-right: 60px;
+      margin-left: 80px;
+      
+    }
+    .drop label{
+      font-size:15px;
+      color: purple;
+    }
+    .drop select{
+    width:10rem;
+    height: 30px;
+    
+
+}
+#text{
+  
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  
+}
+select{
+    font-size:20px;
+    cursor: pointer;
+}
+		.box {
+			display: inline-block;
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid black;
+            color: white;
+            background-color: purple;
+            font-size: 70px;
+            text-align: center;
+            height:80px;
+            width: 200px;
+            border-radius: 30px;
+		}
+        .t{
+            height:60px;
+            background-color: purple;
+        }
+        .z{
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+        }
+        .pt{
+      font-size:20px;
+      color: black;
+    }
+    .oo{
+  margin-top: 20px;
+}
+    .para{
+      top:0px;
+      color: black;
+      font-size: 13px;
+    }
+	</style>
+</head>
+<body>
+    <header class="t">
+
+    </header>
+    <br>
+    <br>
+    <br>
+    <P class="z">Branch-wise future prediction</P>
+    <div class="drop">
+        <label for="course">SELECT INDUSTRY:</label>
+	<select id="filter">
+		<option value="eng">CSE</option>
+		<option value="man">ECE</option>
+		<option value="pharma">EE</option>
+	</select>
+    </drop>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+	<div class="box">
+		<label></label>
+		<span id="intake">34079</span>
+        <div class="oo">
+            <h3 class="pt">Total Intakes</h3>
+            <p class="para">
+              Total intakes as per the selected choice of your convenience.
+              
+            </p>
+          </div>
+	</div>
+    
+
+	<div class="box">
+		<label></label>
+		<span id="enrolled">13429</span>
+        <div class="oo">
+            <h3 class="pt">Total Enrollments</h3>
+            <p class="para">
+              Total Enrollments as per the selected choice of your convenience.
+              
+            </p>
+          </div>
+	</div>
+
+	<div class="box">
+		<label></label>
+		<span id="placed">58131</span>
+        <div class="oo">
+            <h3 class="pt">Total Placements</h3>
+            <p class="para">
+              Total Placements as per the selected choice of your convenience.
+              
+            </p>
+          </div>
+	</div>
+
+	<script>
+		// default values
+		var eng = { intake: 34079, enrolled: 13429, placed: 58131};
+		var man = {intake: 25996, enrolled: 8778, placed: 3629};
+		var pharma = { intake: 15818, enrolled: 4617, placed: 1530};
+
+		// update box values based on selected filter
+		$('#filter').on('change', function() {
+			var filter = $(this).val();
+
+			if (filter === 'eng') {
+				$('#intake').text(eng.intake);
+				$('#enrolled').text(eng.enrolled);
+				$('#placed').text(eng.placed);
+			} else if (filter === 'man') {
+				$('#intake').text(man.intake);
+				$('#enrolled').text(man.enrolled);
+				$('#placed').text(man.placed);
+			} else if (filter === 'pharma') {
+				$('#intake').text(pharma.intake);
+				$('#enrolled').text(pharma.enrolled);
+				$('#placed').text(pharma.placed);
+			}
+		});
+	</script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+</body>
+</html>

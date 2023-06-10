@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICG-003</title>
+    <style>
+        #hu{
+            display: flex;
+            background-color: purple;
+            height: 80px;
+        }
+        .navbar{
+            position: absolute;
+            
+            
+            right:10px;
+
+        }
+        .navbar ul{
+            display: flex;
+            
+          
+            
+            
+        }
+        .navbar ul li{
+            text-decoration: none;
+            list-style: none;
+            margin:20px;
+            color: white;
+            margin-top:12px;
+            
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            list-style: none;
+        }
+        .navbar a:hover{
+            color:black;
+            background-color: white;
+            border-radius: 5px;
+        
+        }
+        #trend{
+    font-weight: bolder;
+    font-size:10px;
+    font-style: italic;
+    color: white;
+    margin-left: 20px;
+    margin-top:1px;
+
+        }
+    
+
+        .class4{ 
+            text-align: center;
+            font-size: 28px;
+            font-style: inherit;
+        }
+        .class4 a{
+            color: purple;
+        }
+        .class1 {
+            color: white;
+            background-color: purple;
+            display: flex;
+        }
+        .class1 ul{
+            overflow: auto;
+            
+        }
+         .class1 li{
+                        float: left;
+                        list-style: none;    
+                        padding: 15px;
+                        margin: 10px;
+                        font-style: inherit; 
+                        text-decoration: none;
+          }   
+          .class1 li a{
+            text-decoration: none;
+            list-style: none;  
+          }
+          /* .image{
+            text-align: center;
+            
+          } */
+          .name{
+            text-align: center;
+            /* color:rgb(174, 29, 222); */
+            font-size:4rem;
+            font-weight: bold;
+            text-shadow:4px 4px rgb(174, 29, 222);
+          }
+        .class2{
+            /* display: inline-block; */
+            /* border: 2px solid purple; */
+            color: purple;
+            font-size: 170%;
+            padding: 5px;
+             }
+             .class3{
+            /* display: inline-block; */
+            /* border: 2px solid purple; */
+            color: purple;
+            font-size: 170%;
+            padding: 5px;
+             }
+             
+.newclass li{
+                        float: left;
+                        list-style: none;    
+                        padding-left: 290px;
+                        /* margin: 10px; */
+                        font-style: inherit; 
+}
+h2{
+    color: purple;
+    text-align: center;
+     font-style: inherit;
+}
+.class5{ background-color: purple;
+    color: white;
+    font-style: inherit;
+    font-size: 25px;
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opt{
+    text-align: center;
+    justify-content: center;
+}
+.tt{
+    width:20rem;
+    height: 2rem;
+}
+select{
+    font-size: x-large;
+    cursor: pointer;
+}
+footer{
+    height:60px;
+    background-color: purple;
+}
+/* #trend{
+    font-weight: bolder;
+    font-size: xx-large;
+    font-style: italic;
+    color: white;
+} */
+.ls{
+    float:right;
+    
+    text-align: right;
+}
+ a.active {
+  background-color:rgba(255, 0, 255, 0.742);
+  color: #fff;
+  box-sizing:content-box;
+  border-radius: 20px;
+}
+#t{
+    display: flex;
+}
+.s{
+    /* border: 2px solid purple; */
+    margin:10px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5);
+    /* background-color: rgb(232, 24, 228);
+    color: white; */
+}
+#hh img{
+    height:70px;
+    width: 255px;
+    margin:5px;
+    background-color: purple;
+}
+#tit{
+    color: purple;
+    text-align: center;
+    margin-top: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+    </style>
+</head>
+<body>
+<!-- <div class="class1">
+    <ul type ="none" >
+        <li><a href="">HOME</a></li>
+        <li><a href="aboutus.html"> ABOUT US</a></li>
+      <li> <a href="contact.html">CONTACT US</a></li>
+    </ul>
+    <div class="job">
+    <a href="">Job prediction</a>
+</div>
+</div> -->
+<div id="hu">
+    <div id="hh">
+        <img src="logo.png">
+        
+    </div>
+    <div class="navbar">
+        <ul>
+            <!-- <li id="trend">Trend Cast</li> -->
+            <li class="ls"><a href="project.html" class="active" >Home</a></li>
+            <li class="ls"><a href="Linechart22.html" >Job Trend Analysis</a></li>
+            <li class="ls"><a href="chatchart.html" >Admission and Placement Analysis</a></li>
+            <!-- <li><a href="contact.html" >Program Trend after SSC</a></li>
+            <li><a href="#" >State Wise Map</a></li> -->
+            <li class="ls"><a href="BranchPlacmt22.html" >Syllabus Upgradation</a></li>
+        </ul>
+    </div>
+
+    </div>
+    <script>
+        const links = document.querySelectorAll('navbar a');
+
+links.forEach(link => {
+  link.addEventListener('click', function() {
+    // Remove the "active" class from all the links
+    links.forEach(link => link.classList.remove('active'));
+
+    // Add the "active" class to the clicked link
+    this.classList.add('active');
+  });
+});
+
+      </script>
+    <p id="tit">RUNTIME TERROR</p>
+
+
+<h2>Prediction of Admission and Jobs in Engineering and Technology/Management/Pharmacy with Respect to Demographic Locations</h2>
+<!-- <div class="newclass">
+    <ul type="none"  >
+  <li>
+<div class="class2">
+    <label for="state"> STATE:</label>
+    <select name="drop-down" id="" >
+    <option value="">Haryana</option>
+    <option value="">Punjab</option>
+    <option value="">Rajasthan</option>
+   </select>
+</div>
+</li>
+<li>
+    
+<div class="class3">
+    <label for="course"> COURSE:</label>
+    <select name="drop-down" id="" >
+    <option value="">Engineering</option>
+    <option value="">Management</option>
+    <option value="">Pharmacy</option>
+   </select>
+</li>
+</div>
+</div> -->
+
+<!-- <div class="class4">
+    Click here to know about:
+    <a href="">Job Prediction</a>
+    <br> <br>
+    Click here to know about:
+    <a href="">Admisssion Prediction</a>
+</div> -->
+
+<!-- <div class="class5">
+    <a href="login.html"> USER LOGIN</a>
+</div> -->
+<br>
+<br>
+<div id="t">
+<div class="s">
+<h3>Job Trend Analysis</h3>
+<p>Job trends are constantly evolving and changing with the economy, technological advancements, and the needs of the workforce. However, by analyzing current and past trends, we can identify patterns and potential future job opportunities.So here we analyse the number of industries opened per year. </p>
+</div>
+<div class="s">
+<h3>Admission and Placement Analysis</h3>
+<p>An admission and placements analysis involves reviewing data related to the admission process and the career outcomes of graduates.By analyzing this data, areas of strength and weakness can be identified, and improvements can be made to enhance the program's competitiveness and effectiveness.</p>
+</div>
+<div class="s">
+<h3>Syllabus Upgradation</h3>
+<p>Syllabus upgradation is a process of reviewing and updating the existing course material to reflect the latest developments and changes in a particular subject.So here we show the Previous year subjects that is now replaced with the latest subjects so that Syllabus can be accomodated.</p>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div>
+    <footer>
+
+    </footer>
+</div>
+
+</body>
+</html>
